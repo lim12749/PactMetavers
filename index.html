@@ -10,16 +10,17 @@
   <body>
 
       <!-- <div id="unity-container" class="unity-desktop"> -->
-      <div id="unity-container" style="width: 100%; height:100%">
-          <canvas id="unity-canvas" width=auto height=auto"></canvas>
-    <!--
-    <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
-        </div>
-    </div>
+      <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
+          <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
+      </div>
 
+          <div id="unity-loading-bar">
+              <div id="unity-logo"></div>
+              <div id="unity-progress-bar-empty">
+                  <div id="unity-progress-bar-full"></div>
+              </div>
+          </div>
+          <!--
     <div id="unity-warning"> </div>
     <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
